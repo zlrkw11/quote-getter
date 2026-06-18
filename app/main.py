@@ -8,6 +8,7 @@ app = FastAPI(
 
 app.include_router(quote.router)
 
+
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
