@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import quote
+from backend.routers import quote
 
 app = FastAPI(
     title="Quote Getter API",

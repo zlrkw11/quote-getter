@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Query
 
-from app.schemas.quote import QuoteResponse
+from backend.schemas.quote import QuoteResponse
 
-from app.services import quoteService
+from backend.services import quoteService
 
 router = APIRouter(tags=["Quote"])
 
