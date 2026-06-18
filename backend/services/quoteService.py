@@ -13,7 +13,7 @@ async def fetch_quote(symbol: str) -> dict:
     async with httpx.AsyncClient(timeout=10) as client:
         response = httpx.get(
         "https://finnhub.io/api/v1/quote",
-        params={"symbol":"AAPL"},
+        params={"symbol": symbol},
         headers={"X-Finnhub-Token":key},
         timeout=10,
     )
